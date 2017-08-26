@@ -1,0 +1,64 @@
+------------(for windows)-------------
+Open Editor Canopy 
+Tools-> Canopy Command Prompt
+ipython --pylab
+(for ubuntu)-> Canopy Command Prompt-> edm install pyqt
+ print("Hello, world")
+ To exit from Command Prompt: Ctrl+d ->Do you relly want to exit(y/n)? y
+ For pyqt error...Go to ...Edit menu---Preferences---python
+ ----------------------For Breaking Out of Loops: ctrl+c (Keyboard Interrupt), code: while True: print("Hello, World!")
+ $ specifies type in the terminal
+ --------Plotting---------
+ In [1]: x=linspace(0,2*pi,50)
+
+In [2]: plot(x,sin(x))
+Out[2]: [<matplotlib.lines.Line2D at 0x7c83f60>]
+
+In [3]: x[0]
+Out[3]: 0.0
+
+In [4]: x[49]
+Out[4]: 6.2831853071795862
+-----Decoration------labelling x and y axis-----
+In [6]: xlabel('x')
+Out[6]: <matplotlib.text.Text at 0x9a7f710>
+
+In [7]: ylabel('sin(x)')
+Out[7]: <matplotlib.text.Text at 0x9a89160>
+------------clear plot area----
+clf()
+
+----
+In [9]: y=linspace(0,2*pi,50)
+In [11]: plot(y,sin(2*y))
+Out[11]: [<matplotlib.lines.Line2D at 0x9d4f2b0>]
+
+In [12]: xlabel('y')
+Out[12]: <matplotlib.text.Text at 0x9b45f60>
+
+In [13]: ylabel('sin(2y)')
+Out[13]: <matplotlib.text.Text at 0x9c1a438>
+
+----tips---TAB---
+pl[TAB]
+po[TAB] up arrow
+x= [TAB] down arrow
+-----more decoration-----
+In [19]: plot(x,sin(x))
+Out[19]: [<matplotlib.lines.Line2D at 0x9de3828>]
+
+In [20]: title('Sinusoids')
+Out[20]: <matplotlib.text.Text at 0x9c1a0f0>
+
+In [21]: legend(['sin(2y)'])
+Out[21]: <matplotlib.legend.Legend at 0x9e71eb8>
+
+-------legend at center---
+In [22]: legend(['sin(2y)'],loc='center')
+Out[22]: <matplotlib.legend.Legend at 0x9e7d048>
+
+options: best/right/left/center
+-----plot line color change----
+In [23]: plot(y,cos(y),'r')
+Out[23]: [<matplotlib.lines.Line2D at 0x9e7fe80>]
+------
